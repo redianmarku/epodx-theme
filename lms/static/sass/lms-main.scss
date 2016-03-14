@@ -1,2 +1,57 @@
 @import 'overrides';
 @import 'lms/static/sass/lms-main';
+
+footer .references {
+  text-align: right;
+}
+
+header.global {
+    nav {
+        padding-top: 6px;
+
+        .left {
+            display: none;
+        }
+
+        .user  {
+            margin-top: 14px;
+        }
+
+        .nav-courseware {
+            margin-top: 14px;
+        }
+    }
+}
+
+.home > header {
+    .outer-wrapper {
+        margin: 45px auto;
+    }
+
+    .title {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+// Don't lowercase course about navigation links
+.course-info .container nav a {
+    text-transform: none;
+}
+
+.container.about h3 {
+    margin: 2em 0 1em;
+}
+
+.view-register .introduction header .title .title-super,
+.view-login .introduction header .title .title-super,
+.view-passwordreset .introduction header .title .title-super {
+    color: $epodx-main-color;
+}
+
+@media only screen and (max-width: 1024px) {
+    header.global h1.logo,
+    .wrapper-footer footer .wrapper-logo {
+        overflow: hidden;
+        width: 225px;
+    }
+}

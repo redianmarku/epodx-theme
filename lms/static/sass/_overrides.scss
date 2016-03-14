@@ -1,1 +1,58 @@
-// TODO
+@import 'bourbon/bourbon';
+
+$epodx-main-color: #a51c30;
+$green: $epodx-main-color;
+
+$green-l1: tint($green,20%);
+$green-l2: tint($green,40%);
+$green-l3: tint($green,60%);
+$green-l4: tint($green,80%);
+$green-l5: tint($green,90%);
+$green-d1: shade($green,20%);
+$green-d2: shade($green,40%);
+$green-d3: shade($green,60%);
+$green-d4: shade($green,80%);
+$green-s1: saturate($green,15%);
+$green-s2: saturate($green,30%);
+$green-s3: saturate($green,45%);
+$green-u1: desaturate($green,15%);
+$green-u2: desaturate($green,30%);
+$green-u3: desaturate($green,45%);
+
+$blue: $green;
+$blue-l1: tint($blue,20%);
+$blue-l2: tint($blue,40%);
+$blue-l3: tint($blue,60%);
+$blue-l4: tint($blue,80%);
+$blue-l5: tint($blue,90%);
+$blue-d1: shade($blue,20%);
+$blue-d2: shade($blue,40%);
+$blue-d3: shade($blue,60%);
+$blue-d4: shade($blue,80%);
+$blue-s1: saturate($blue,15%);
+$blue-s2: saturate($blue,30%);
+$blue-s3: saturate($blue,45%);
+$blue-u1: desaturate($blue,15%);
+$blue-u2: desaturate($blue,30%);
+$blue-u3: desaturate($blue,45%);
+$blue-t0: rgba($blue, 0.125);
+$blue-t1: rgba($blue, 0.25);
+$blue-t2: rgba($blue, 0.50);
+$blue-t3: rgba($blue, 0.75);
+
+$homepage-bg-image: url('/static/images/banner.jpg');
+$header-bg: white;
+$footer-bg: white;
+
+$link-color: $green;
+$link-color-d1: $green;
+$link-hover: $green-l1;
+$button-color: $green;
+$action-primary-bg: $green;
+$action-primary-shadow: $green-d2;
+$action-primary-focused-bg: $green-d1;
+$action-primary-active-bg: $green-l2;
+$action-primary-active-fg: $green-d1;
+$action-primary-active-shadow: $green-d2;
+$action-primary-active-focused-fg: $green-d4;
+$action-primary-active-focused-shadow: $green-d3;
