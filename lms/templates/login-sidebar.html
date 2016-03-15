@@ -1,0 +1,29 @@
+<%! 
+from django.utils.translation import ugettext as _ 
+from django.core.urlresolvers import reverse
+%>
+
+<header>
+  <h2 class="sr">${_("Helpful Information")}</h2>
+</header>
+
+% if settings.FEATURES.get('AUTH_USE_OPENID'):
+<!-- <div class="cta cta-login-options-openid">
+  <h3>${_("Login via OpenID")}</h3>
+  <p>${_('You can now start learning with {platform_name} by logging in with your <a rel="external" href="http://openid.net/">OpenID account</a>.').format(platform_name=platform_name)}</p>
+  <a class="action action-login-openid" href="#">${_("Login via OpenID")}</a>
+</div> -->
+% endif
+
+<div class="cta cta-help">
+  <h3>${_("Not Enrolled?")}</h3>
+  <p><a href="${reverse('register_user')}">${_("Sign up for {platform_name} today!").format(platform_name=platform_name)}</a></p>
+
+  ## Disable help unless the FAQ marketing link is enabled
+  % if settings.MKTG_URL_LINK_MAP.get('FAQ'):
+    <h3>${_("Need Help?")}</h3>
+    <p>
+      This page is only for admitted participants who have been directed to use it. If that describes you, please contact <a href="mailto:epod@hks.harvard.edu">EPoD@hks.harvard.edu</a> with any requests for assistance. Otherwise, visit our <a href="http://epod.cid.harvard.edu/" target="_blank">main webpage</a> to learn more about Evidence for Policy Design at Harvard Kennedy School.
+    </p>
+  % endif
+</div>
