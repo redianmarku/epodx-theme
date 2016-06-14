@@ -232,10 +232,47 @@ dd a {
 // END Expand - Collapse Links /
 
 
-/* Navigate Green Text */
+// Navigate Green Text
 
 .green-text {
 
 color: #339966;
 
 } 
+ xmp {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+// Message text input with hints and feedback
+
+ .message { 
+   font-size: inherit; 
+    margin-top: 25px;
+    margin-right: 110px;
+    background-color: #d3d3d3;
+    padding: 20px;
+}
+ .message:before {
+    content: "Thanks for your response. You wrote:"  "\A" "\A";
+  	font-weight: bold;
+  	display: block;  
+    white-space: pre-wrap;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
