@@ -2,7 +2,7 @@
 @import 'lms/static/sass/lms-main';
 
 footer .references {
-  text-align: right;
+    text-align: right;
 }
 
 header.global {
@@ -67,7 +67,7 @@ img-right {
     float: right;
     margin: 0 0 10px 10px;
     box-shadow: 5px 5px 5px #ccc;
-  	border: 1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
 // Blue Box External Links 
@@ -78,11 +78,11 @@ img-right {
 }
 
 .infobox, .successbox, .warningbox, .errorbox, .validationbox {
-border: 1px solid;
-margin: 10px 0px;
-padding:15px 10px 15px 50px;
-background-repeat: no-repeat;
-background-position: 10px center;
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
 }
 
 
@@ -109,32 +109,26 @@ background-position: 10px center;
 
 #navcontainer ul
 {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-#navcontainer ul li 
-  { 
-  display: inline;
-  padding: 0 0 0 0;
-  
-  }
+#navcontainer ul li {
+    display: inline;
+    padding: 0 0 0 0;
+}
 
 
-#navcontainer ul li + li:before
-  { 
- content: "|"; padding: 0 .5em;
-  }
+#navcontainer ul li + li:before {
+    content: "|"; padding: 0 .5em;
+}
 
-#navcontainer ul li
-  {
-  text-decoration: none;
- 
- 
-  }
+#navcontainer ul li {
+    text-decoration: none;
+}
+
 dt {
-    
     font-size: 2em;
     text-transform: uppercase;
     padding: 0 0 0 5px;
@@ -142,28 +136,25 @@ dt {
 }
   
 dl {
-   
     height: auto !important;
     margin: 0 0 3em 7em;
     padding: 10px;
     width: 75%;
-	color: #000;
-  }
+    color: #000;
+}
+
 dd p {
     margin: 4px 0px 10px;
-   	line-height: 2.5;
-	
+    line-height: 2.5;
 }
 
 dd a {
     color: #000;
-	
 }
 
-
 .back-to-top {
-  float: right;
-  margin-top: 3em;
+    float: right;
+    margin-top: 3em;
 }
 
 //  End Key Terms Styles 
@@ -172,22 +163,22 @@ dd a {
 
 // Progress Bar
 
- .ui-progressbar {
+.ui-progressbar {
     position: relative;
-	
-  }
-  .ui-widget-header {
+}
+
+.ui-widget-header {
     border: 1px solid #ccc;
-    background: #5CB85C  50% 50% repeat-x;
-    
-  }
-  .progress-label {
+    background: #5CB85C 50% 50% repeat-x;
+}
+
+.progress-label {
     position: absolute;
     left: 45%;
     top: 4px;
     font-weight: bold;
     text-shadow: 1px 1px 0 #fff;
-  }
+}
 
 
 // End Progress Bar
@@ -197,17 +188,16 @@ dd a {
 // Expand - Collapse Links 
 
 .toggle-box {
-  display: none;
+    display: none;
 }
 
 .toggle-box + label {
-  font-size: 1em;
-  color: #00529B;
-  cursor: pointer;
-  display: block;
-  line-height: 21px;
-  margin-bottom: 25px;
- 
+    font-size: 1em;
+    color: #00529B;
+    cursor: pointer;
+    display: block;
+    line-height: 21px;
+    margin-bottom: 25px;
 }
 
 .toggle-box + label + div {
@@ -221,25 +211,25 @@ dd a {
 }
 
 .toggle-box + label:before {
-	font-family: 'FontAwesome';
+    font-family: 'FontAwesome';
     content: " \f0fe" "\00a0";
 }
 
 .toggle-box:checked + label:before {
- 	font-family: 'FontAwesome';
+    font-family: 'FontAwesome';
     content: " \f146" "\00a0";
 } 
+
 // END Expand - Collapse Links /
 
 
 // Navigate Green Text
 
 .green-text {
+    color: #339966;
+}
 
-color: #339966;
-
-} 
- xmp {
+xmp {
     white-space: pre-wrap;       /* CSS 3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -249,30 +239,17 @@ color: #339966;
 
 // Message text input with hints and feedback
 
- .message { 
-   font-size: inherit; 
+.message { 
+    font-size: inherit; 
     margin-top: 25px;
     margin-right: 110px;
     background-color: #d3d3d3;
     padding: 20px;
 }
- .message:before {
+
+.message:before {
     content: "Thanks for your response. You wrote:"  "\A" "\A";
-  	font-weight: bold;
-  	display: block;  
+    font-weight: bold;
+    display: block;  
     white-space: pre-wrap;
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
