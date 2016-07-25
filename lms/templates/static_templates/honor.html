@@ -1,0 +1,32 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Honor Code")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+  <section class="container about">
+    <h1>${_("Terms of Service")}</h1>
+
+    <h2>${_("Collaboration Policy")}</h2>
+    <p>${_("By enrolling in a course on epodx, you are joining a community of leaders and learners. Through epodx, EPoD and our partner organizations aim to equip policy decision-makers with practical skills and frameworks for effectively using data and evidence in your work. You are an integral part of the community that will help epodx achieve this goal. As such, epodx depends upon your motivation to learn the material, and to do so with honesty and academic integrity. By participating in epodx, you agree to the Honor Code below.")}</p>
+
+    <h2>${_("EpodX Honor Code Pledge")}</h2>
+    <p>${_("By enrolling in an epodx course, I agree that I will:")}</p>
+    <ul>
+      <li>${_("Complete all tests and assignments on my own, unless collaboration on an assignment is explicitly permitted.")}</li>
+      <li>${_("Maintain only one user account and not let anyone else use my username and/or password.")}</li>
+      <li>${_("Not engage in any activity that would dishonestly improve my results, or improve or hurt the results of others.")}</li>
+      <li>${_("Not post answers to problems that are being used to assess student performance.")}</li>
+    </ul>
+
+    <h2>${_("Violations")}</h2>
+    <p>${_("If you are found in violation of the Terms of Service or Honor Code, you may be subject to one or more of the following actions:.")}</p>
+    <ul>
+      <li>${_("Being unenrolled from a course; or")}</li>
+      <li>${_("Termination of your use of the Site.")}</li>
+      <li>${_("Additional actions may be taken at the discretion of epodx course providers.")}</li>
+    </ul>
+    <p>${_("Honor code violations will be determined at the discretion of epodx course providers. You will be notified if a determination has been made that you have violated this honor code and you will be informed of the corresponding action to be taken as a result of the violation.")}</p>
+  </section>
+</main>
