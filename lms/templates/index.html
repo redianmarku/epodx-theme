@@ -4,18 +4,6 @@
 <%!
 from django.utils.translation import ugettext as _
 from django.core.urlresolvers import reverse
-from microsite_configuration import microsite
-%>
-
-<%
-  homepage_overlay_html = microsite.get_value('homepage_overlay_html')
-
-  ## To display a welcome video, change False to True, and add a YouTube ID (11 chars, eg "123456789xX") in the following line
-  show_homepage_promo_video = microsite.get_value('show_homepage_promo_video', False)
-  homepage_promo_video_youtube_id = microsite.get_value('homepage_promo_video_youtube_id', "your-youtube-id")
-
-  show_partners = microsite.get_value('show_partners', True)
-
 %>
 
 <section class="home">
@@ -23,27 +11,10 @@ from microsite_configuration import microsite
     <div class="outer-wrapper">
       <div class="title">
         <hgroup>
-          % if homepage_overlay_html:
-            ${homepage_overlay_html}
-          % else:
-            % if self.stanford_theme_enabled():
-              <h1>${_("Free courses from <strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
-              <h2>${_("For anyone, anywhere, anytime")}</h2>
-            % else:
-              <h1>Evidence for Policy Design Online Learning</h1>
-              <h2>uniting research and practice for smart policy</h2>
-            % endif
-          % endif
+          <h1>Evidence for Policy Design Online Learning</h1>
+          <h2>uniting research and practice for smart policy</h2>
         </hgroup>
       </div>
-
-      % if show_homepage_promo_video:
-        <a href="#video-modal" class="media" rel="leanModal">
-          <div class="hero">
-            <div class="play-intro"></div>
-          </div>
-        </a>
-      % endif
     </div>
 
   </header>
@@ -76,9 +47,7 @@ from microsite_configuration import microsite
 <section id="video-modal" class="modal home-page-video-modal video-modal">
   <div class="inner-wrapper">
     <%
-      youtube_video_id = homepage_promo_video_youtube_id
-      if self.stanford_theme_enabled():
-        youtube_video_id = "2gmreZObCY4"
+      youtube_video_id = 'xxxxxxx'
     %>
     <iframe title="YouTube Video" width="640" height="360" src="//www.youtube.com/embed/${youtube_video_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div>
