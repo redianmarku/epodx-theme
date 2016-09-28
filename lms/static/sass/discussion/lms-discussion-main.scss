@@ -1,0 +1,19 @@
+@import 'lms/static/sass/discussion/lms-discussion-main';
+@import '../overrides';
+
+// The discussion page uses pattern library v2 while most other pages use v1.
+// These tweaks are needed to make the discussion page look more consistent
+// with the rest of the site.
+@import 'lms/static/sass/course/layout/courseware_header';
+
+.wrapper-course-material .course-tabs {
+  padding-bottom: 0;
+}
+
+.header-global.slim .wrapper-header {
+  height: 45px;
+}
+
+footer#footer-openedx {
+  max-width: 1200px;
+}

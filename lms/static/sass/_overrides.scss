@@ -1,58 +1,214 @@
-@import 'bourbon/bourbon';
+footer .references {
+  text-align: right;
+}
 
-$epodx-main-color: #a51c30;
-$green: $epodx-main-color;
+header.global {
+  nav {
+    padding-top: 6px;
 
-$green-l1: tint($green,20%);
-$green-l2: tint($green,40%);
-$green-l3: tint($green,60%);
-$green-l4: tint($green,80%);
-$green-l5: tint($green,90%);
-$green-d1: shade($green,20%);
-$green-d2: shade($green,40%);
-$green-d3: shade($green,60%);
-$green-d4: shade($green,80%);
-$green-s1: saturate($green,15%);
-$green-s2: saturate($green,30%);
-$green-s3: saturate($green,45%);
-$green-u1: desaturate($green,15%);
-$green-u2: desaturate($green,30%);
-$green-u3: desaturate($green,45%);
+    .left {
+      display: none;
+    }
 
-$blue: $green;
-$blue-l1: tint($blue,20%);
-$blue-l2: tint($blue,40%);
-$blue-l3: tint($blue,60%);
-$blue-l4: tint($blue,80%);
-$blue-l5: tint($blue,90%);
-$blue-d1: shade($blue,20%);
-$blue-d2: shade($blue,40%);
-$blue-d3: shade($blue,60%);
-$blue-d4: shade($blue,80%);
-$blue-s1: saturate($blue,15%);
-$blue-s2: saturate($blue,30%);
-$blue-s3: saturate($blue,45%);
-$blue-u1: desaturate($blue,15%);
-$blue-u2: desaturate($blue,30%);
-$blue-u3: desaturate($blue,45%);
-$blue-t0: rgba($blue, 0.125);
-$blue-t1: rgba($blue, 0.25);
-$blue-t2: rgba($blue, 0.50);
-$blue-t3: rgba($blue, 0.75);
+    .user  {
+      margin-top: 14px;
+    }
 
-$homepage-bg-image: url('/static/images/banner.jpg');
-$header-bg: white;
-$footer-bg: white;
+    .nav-courseware {
+      margin-top: 14px;
+    }
+  }
+}
 
-$link-color: $green;
-$link-color-d1: $green;
-$link-hover: $green-l1;
-$button-color: $green;
-$action-primary-bg: $green;
-$action-primary-shadow: $green-d2;
-$action-primary-focused-bg: $green-d1;
-$action-primary-active-bg: $green-l2;
-$action-primary-active-fg: $green-d1;
-$action-primary-active-shadow: $green-d2;
-$action-primary-active-focused-fg: $green-d4;
-$action-primary-active-focused-shadow: $green-d3;
+.container.about h3 {
+  margin: 2em 0 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+  header.global h1.logo,
+  .wrapper-footer footer .wrapper-logo {
+    overflow: hidden;
+    width: 225px;
+  }
+}
+
+
+// Styles for EpodX CM
+
+img-right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.img-dropshadow {
+  float: right;
+  margin: 0 0 10px 10px;
+  box-shadow: 5px 5px 5px #ccc;
+  border: 1px solid #ccc;
+}
+
+// Blue Box External Links
+
+.external-link[target="_blank"]:after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+}
+
+.infobox, .successbox, .warningbox, .errorbox, .validationbox {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding:15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+
+.infobox {
+  color: #00529B;
+  background-color: #BDE5F8;
+  background-image: url('/static/images/info.png');
+}
+
+// End Optional Blue Box External Link
+
+
+//  Blue Box Download Link
+
+.download-link[target="_blank"]:after {
+  font-family: 'FontAwesome';
+  content: " \f019";
+}
+
+// Blue Box Download Link
+
+
+// Key Terms Styles
+
+#navcontainer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navcontainer ul li {
+  display: inline;
+  padding: 0 0 0 0;
+}
+
+
+#navcontainer ul li + li:before {
+  content: "|"; padding: 0 .5em;
+}
+
+#navcontainer ul li {
+  text-decoration: none;
+}
+
+dt {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 0 0 0 5px;
+  font-weight: bold;
+}
+
+dl {
+  height: auto !important;
+  margin: 0 0 3em 7em;
+  padding: 10px;
+  width: 75%;
+  color: #000;
+}
+
+dd p {
+  margin: 4px 0px 10px;
+  line-height: 2.5;
+}
+
+dd a {
+  color: #000;
+}
+
+.back-to-top {
+  float: right;
+  margin-top: 3em;
+}
+
+//  End Key Terms Styles
+
+
+
+// Progress Bar
+
+.ui-progressbar {
+  position: relative;
+}
+
+.ui-widget-header {
+  border: 1px solid #ccc;
+  background: #5CB85C 50% 50% repeat-x;
+}
+
+.progress-label {
+  position: absolute;
+  left: 45%;
+  top: 4px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+
+// End Progress Bar
+
+
+
+// Expand - Collapse Links
+
+.toggle-box {
+  display: none;
+}
+
+.toggle-box + label {
+  font-size: 1em;
+  color: #00529B;
+  cursor: pointer;
+  display: block;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+
+.toggle-box + label + div {
+  display: none;
+  margin-bottom: 10px;
+  margin-left: 20px
+}
+
+.toggle-box:checked + label + div {
+  display: block;
+}
+
+.toggle-box + label:before {
+  font-family: 'FontAwesome';
+  content: " \f0fe" "\00a0";
+}
+
+.toggle-box:checked + label:before {
+  font-family: 'FontAwesome';
+  content: " \f146" "\00a0";
+}
+
+// END Expand - Collapse Links /
+
+
+// Navigate Green Text
+
+.green-text {
+  color: #339966;
+}
+
+xmp {
+  white-space: pre-wrap;       /* CSS 3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}

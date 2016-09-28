@@ -1,0 +1,46 @@
+@import 'lms/static/sass/partials/base/variables';
+
+$epodx-main-color: #a51c30;
+$custom-color: $epodx-main-color;
+
+$custom-color-l1: tint($custom-color,20%);
+$custom-color-l2: tint($custom-color,40%);
+$custom-color-l3: tint($custom-color,60%);
+$custom-color-l4: tint($custom-color,80%);
+$custom-color-l5: tint($custom-color,90%);
+$custom-color-d1: shade($custom-color,20%);
+$custom-color-d2: shade($custom-color,40%);
+$custom-color-d3: shade($custom-color,60%);
+$custom-color-d4: shade($custom-color,80%);
+$custom-color-s1: saturate($custom-color,15%);
+$custom-color-s2: saturate($custom-color,30%);
+$custom-color-s3: saturate($custom-color,45%);
+$custom-color-u1: desaturate($custom-color,15%);
+$custom-color-u2: desaturate($custom-color,30%);
+$custom-color-u3: desaturate($custom-color,45%);
+
+$action-primary-bg: $custom-color;
+$action-primary-fg: $white;
+$action-primary-shadow: $custom-color-d4;
+$action-primary-focused-bg: $custom-color-d1;
+$action-primary-focused-fg: $white;
+$action-primary-active-bg: $custom-color;
+$action-primary-active-fg: $custom-color-d3;
+$action-primary-active-shadow: $custom-color-d2;
+$action-primary-active-focused-fg: $custom-color-d4;
+$action-primary-active-focused-shadow: $custom-color-d3;
+$action-primary-disabled-bg: $m-gray-d3;
+$action-prmary-disabled-fg: $white;
+
+$link-color: $custom-color;
+$link-color-d1: $custom-color;
+$link-hover: $custom-color-l1;
+$site-status-color: $pink;
+$button-color: $custom-color;
+
+$header-graphic-super-color: $custom-color-d1;
+
+$homepage-bg-image: url('../images/banner.jpg');
+$login-banner-image: none;
+$register-banner-image: none;
+$passwordreset-banner-image: none;
