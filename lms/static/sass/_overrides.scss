@@ -2,7 +2,12 @@ footer .references {
   text-align: right;
 }
 
-.header-global h1.logo a img {
+.header-global,
+.header-global.slim {
+    border-bottom: none;
+}
+
+.header-global .logo a img {
   height: 50px;
 }
 
