@@ -44,3 +44,31 @@ $homepage-bg-image: url('../images/banner.jpg');
 $login-banner-image: none;
 $register-banner-image: none;
 $passwordreset-banner-image: none;
+
+// action - secondary
+$action-secondary-bg: $custom-color;
+$action-secondary-fg: $white;
+$action-secondary-shadow: $custom-color-d2;
+$action-secondary-focused-bg: $custom-color-l3;
+$action-secondary-focused-fg: $white;
+$action-secondary-active-bg: $custom-color-l2;
+$action-secondary-active-fg: $custom-color-d1;
+$action-secondary-active-shadow: $custom-color-d1;
+$action-secondary-active-focused-fg: $custom-color-d3;
+$action-secondary-active-focused-shadow: $custom-color-d2;
+$action-secondary-disabled-bg: $gray-d3;
+$action-secondary-disabled-fg: $white;
+
+// misc other buttons and borders
+$m-blue-d1: $action-secondary-active-bg;
+$m-blue-d2: $action-secondary-focused-bg;
+$m-blue-d3: $action-secondary-bg;
+$uxpl-blue-base: $action-secondary-bg;
+$uxpl-blue-hover-active: $action-secondary-active-bg;
+$button-color: $action-secondary-bg;
+$button-archive-color: $action-secondary-bg;
+$lms-active-color: $action-secondary-bg;
+$lms-border-color: $action-secondary-bg;
+$lms-label-color: $gray-d3;
+$button-bg-hover-color: $action-secondary-bg;
+$forum-color-active-thread: $action-secondary-bg;
