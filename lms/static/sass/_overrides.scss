@@ -2,16 +2,16 @@ footer .references {
   text-align: right;
 }
 
-.header-global,
-.header-global.slim {
+.global-header,
+.global-header.slim {
     border-bottom: none;
 }
 
-.header-global .logo a img {
+.global-header .header-logo a .logo {
   height: 50px;
 }
 
-.header-global.slim .wrapper-header .course-header {
+.global-header.slim .wrapper-header .course-header {
   width: auto;
   max-width: 50%;
 }
@@ -226,3 +226,59 @@ xmp {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+
+.register-btn, .sign-in-btn, a.help-link{
+       margin: 8px 15px 0 !important;
+       padding: 10px 20px !important;
+       box-shadow: none !important;
+       border: 0px solid !important;
+       background: white none !important;
+       color: $epodx-main-color !important;
+       text-transform: none !important;
+       font-weight: 300 !important;
+       font-size: 1rem;
+       line-height: normal;
+
+       &:hover, &:focus, &:active {
+         background: none;
+         box-shadow: none;
+         color: white;
+       }
+     }
+     .nav-links {
+       .main .nav-tab a {
+          color: $epodx-main-color !important;
+         .btn {
+           color: $epodx-main-color !important;
+           padding: 7px 25px 19px;
+           font-weight: 400;
+           display: inline-block;
+           margin-bottom: -10px;
+           border-bottom: 4px hidden white;
+           cursor: pointer;
+           background-color: transparent;
+           border-style: hidden;
+         }
+         &.active {
+           border-bottom: 4px white;
+           border-bottom-style: solid;
+         }
+       }
+       .secondary {
+         .nav-item {
+           a, span {
+             color: $epodx-main-color !important;
+             font-weight: 300;
+           }
+         }
+         .dropdown-user-menu {
+           border-radius: 4px;
+           box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+           border: 1px solid $border-color;
+           .dropdown-nav-item a {
+             color: black;
+           }
+         }
+       }
+     }

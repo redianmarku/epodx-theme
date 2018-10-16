@@ -1,4 +1,7 @@
 @import 'lms/static/sass/discussion/lms-discussion-main';
+@import 'lms/static/sass/base/extends';
+@import 'lms/static/sass/course/layout/courseware_header';
+@import '../partials/lms/theme/variables-v1';
 @import '../overrides';
 
 // The discussion page uses pattern library v2 while most other pages use v1.

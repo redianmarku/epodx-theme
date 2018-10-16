@@ -1,4 +1,4 @@
-@import 'lms/static/sass/partials/base/variables';
+@import 'lms/static/sass/partials/lms/theme/variables';
 
 $epodx-main-color: #a51c30;
 $custom-color: $epodx-main-color;
@@ -29,7 +29,7 @@ $action-primary-active-fg: $custom-color-d3;
 $action-primary-active-shadow: $custom-color-d2;
 $action-primary-active-focused-fg: $custom-color-d4;
 $action-primary-active-focused-shadow: $custom-color-d3;
-$action-primary-disabled-bg: $m-gray-d3;
+$action-primary-disabled-bg: gray;
 $action-prmary-disabled-fg: $white;
 
 $link-color: $custom-color;
@@ -56,7 +56,7 @@ $action-secondary-active-fg: $custom-color-d1;
 $action-secondary-active-shadow: $custom-color-d1;
 $action-secondary-active-focused-fg: $custom-color-d3;
 $action-secondary-active-focused-shadow: $custom-color-d2;
-$action-secondary-disabled-bg: $gray-d3;
+$action-secondary-disabled-bg: gray;
 $action-secondary-disabled-fg: $white;
 
 // misc other buttons and borders
@@ -69,6 +69,6 @@ $button-color: $action-secondary-bg;
 $button-archive-color: $action-secondary-bg;
 $lms-active-color: $action-secondary-bg;
 $lms-border-color: $action-secondary-bg;
-$lms-label-color: $gray-d3;
+$lms-label-color: gray;
 $button-bg-hover-color: $action-secondary-bg;
 $forum-color-active-thread: $action-secondary-bg;
